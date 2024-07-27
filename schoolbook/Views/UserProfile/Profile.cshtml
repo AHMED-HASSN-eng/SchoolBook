@@ -1,0 +1,185 @@
+﻿@using System.Security.Claims;
+@using Microsoft.AspNetCore.Authorization;
+@using Microsoft.AspNetCore.Hosting;
+@using Microsoft.AspNetCore.Mvc;
+@using Newtonsoft.Json;
+@using schoolbook.Models;
+@using schoolbook.viewmodel;
+@{
+    Layout = null;
+}
+@model User
+@{
+    var sum = ViewBag.userbuyopertionscount + ViewBag.usersellopertionscount;
+    SchoolBookEntities context = new SchoolBookEntities();
+
+}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة المستخدم</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/userProfile.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="user-profile">
+        <div id="profile-content">
+            <header>
+                <div class="container">
+                    <div id="header-links">
+                        <i class="fa-solid fa-bars" id="header-links"></i>
+                        <!-- this is a horzental list -->
+                        <ul class="header-outer-links">
+                            <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                            <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                            <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                            <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                            <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                        </ul>
+                        <!-- this is a vertical list -->
+                        <ul id="links-list" class="links-list hidden">
+                            <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                            <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                            <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                            <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                            <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                        </ul>
+                    </div>
+                    <div class="account-shop-logo">
+                        <div class="account-shop">
+                            @{
+                                if (ViewBag.logining == true)
+                                {
+                                    <div id="account">
+                                        <img src="/userimages/@ViewBag.user.Image" alt="">
+                                        <span>الحساب</span>
+                                        <ul id="account-links" class="hidden">
+                                            <li><a href="/userprofile/profile" class="inner-links">الصفحة الشخصية</a></li>
+                                            <li><a href="/EditeProfile/EditeProfile" class="inner-links">تعديل البيانات</a></li>
+                                            <li><a href="/addnewbook/addnewbook" class="inner-links">اضافة كتاب</a></li>
+                                            <li><a href="/homepage/logout" class="inner-links">تسجيل الخروج</a></li>
+                                        </ul>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div id="account">
+                                        <img src="/images/logo.png" alt="">
+                                        <span>الحساب</span>
+                                        <ul id="account-links" class="hidden">
+
+                                            <li><a href="/signin/signin" class="inner-links">تسجيل الدخول</a></li>
+                                        </ul>
+                                    </div>
+                                }
+                            }
+                            <div id="shop">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <!-- <span>سلة المشتريات</span>-->
+                                <a href="/cart/index" class="inner-links">سلة المشتريات</a>
+                            </div>
+                        </div>
+                        <div id="logo">
+                            <img src="/images/logo.png" alt="logo">
+                            <strong>School Book</strong>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div id="user-information">
+                <img src="/userimages/@Model.Image" alt="">
+                <ul class="information">
+                    <li>الاسم كامل : <span>@Model.FirstName @Model.LastName</span></li>
+                    <li>البريد الإلكتروني : <span>@Model.Email</span></li>
+                    <li>رقم الهاتف : <span>@Model.PhoneNumber</span></li>
+                    <li>العنوان : <span>@Model.Governorate / @Model.Central</span></li>
+                    <a href="/EditeProfile/EditeProfile/">تعديل البيانات</a>
+                </ul>
+            </div>
+        </div>
+        <div id="all-processes">
+            <div class="container">
+                <div class="process">
+                    <div class="total-processes">
+                        جميع العمليات(البيع,الشراء)
+                    </div>
+                    <div class="total-number">
+                       @sum  
+                    </div>
+                </div>
+                <div class="process">
+                    <div class="buy-processes">
+                        جميع عمليات الشراء
+                    </div>
+                    <div class="buy-number">@ViewBag.userbuyopertionscount</div>
+                </div>
+                <div class="process">
+                    <div class="sell-processes">
+                        جميع عمليات البيع
+                    </div>
+                    <div class="sell-number">@ViewBag.usersellopertionscount</div>
+                </div>
+            </div>
+        </div>
+        <div id="last-five-processes">
+            <div class="container">
+                <div class="section-title">
+                    اخر خمس عمليات
+                </div>
+                <table class="recent-books">
+                    <thead>
+                        <tr>
+                            <td>اسم الكتاب</td>
+                            <td>جودة الكتاب</td>
+                            <td>نوع العملية</td>
+                            <td>تاريخ العملية</td>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+               @foreach (Operation item in ViewBag.useropertions)
+                {
+                            
+                            Book book = context.Books.Find(item.BookId);
+                            
+                            <tr>
+                            <td>@book.CompanyName</td>
+                            <td>
+                                <div class="rate">
+                                    @for(int i=0;i<book.qulaity;i++)
+                                    {
+                                    <i class="fa-solid fa-star"></i>
+                                    }
+                                </div>
+                            </td>
+                           @if(Model.Id==item.buyerrId)
+                           {
+                            <td>شراء</td>
+                           }
+                           else
+                           {
+                            <td>بيع</td>
+                           }
+                            <td>@item.OperationData</td>
+                        </tr>
+                  }
+                     
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="/js/home.js"></script>
+</body>
+</html>

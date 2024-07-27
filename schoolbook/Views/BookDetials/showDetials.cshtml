@@ -1,0 +1,153 @@
+﻿@{
+    Layout = null;
+}
+@model Book
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تفاصيل الكتاب</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/home.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <style>
+        header {
+            background-image: linear-gradient(to top, #57bcb6 0%, #6e45e2ad 100%);
+        }
+    </style>
+</head>
+<body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <div id="header-links">
+                <i class="fa-solid fa-bars" id="header-links"></i>
+                <!-- this is horizontal list -->
+                <ul class="header-outer-links">
+                    <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                    <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                    <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                    <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                    <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                </ul>
+                <!-- this is a vertical list -->
+                <ul id="links-list" class="links-list hidden">
+                    <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                    <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                    <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                    <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                    <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                </ul>
+            </div>
+            <div class="account-shop-logo">
+                <div class="account-shop">
+                    @{
+                        if (ViewBag.logining == true)
+                        {
+                            <div id="account">
+                                <img src="/userimages/@ViewBag.user.Image" alt="">
+                                <span>الحساب</span>
+                                <ul id="account-links" class="hidden">
+                                    <li><a href="/userprofile/profile" class="inner-links">الصفحة الشخصية</a></li>
+                                    <li><a href="/EditeProfile/EditeProfile" class="inner-links">تعديل البيانات</a></li>
+                                    <li><a href="/addnewbook/addnewbook" class="inner-links">اضافة كتاب</a></li>
+                                    <li><a href="/homepage/logout" class="inner-links">تسجيل الخروج</a></li>
+                                </ul>
+                            </div>
+                        }
+                        else
+                        {
+                            <div id="account">
+                                <img src="/images/logo.png" alt="">
+                                <span>الحساب</span>
+                                <ul id="account-links" class="hidden">
+
+                                    <li><a href="/signin/signin" class="inner-links">تسجيل الدخول</a></li>
+                                </ul>
+                            </div>
+                        }
+                    }
+                    <div id="shop">
+                        <i class="fa-solid fa-cart-shopping"></i>
+                        <!-- <span>سلة المشتريات</span>-->
+                        <a href="/cart/index" class="inner-links">سلة المشتريات</a>
+                    </div>
+                </div>
+                <div id="logo">
+                    <img src="/images/logo.png" alt="logo">
+                    <strong>School Book</strong>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- end header -->
+    <!-- start book information -->
+    <section id="book-information">
+        @{
+           
+            string img = $"{Model.Id}{ViewBag.user.Id}{1}.jpg";
+        }
+        <div class="image-box">
+            <img src="/images/Landing_BG.jpg" id="preview">
+            <div class="small-images">
+                <img src="/images/img-4.jpg" id="land-img4" alt="">
+                <img src="/images/img-3.jpg" id="land-img3" alt="">
+                <img src="/images/img-2.jpg" id="land-img2" alt="">
+                <img src="/images/img-1.jpg" id="land-img1" alt="">
+                <img src="/images/Landing_BG.jpg" id="land-img" alt="">
+               @for(int i=1;i<=5;i++)
+               {
+                    img = $"{Model.Id}{ViewBag.user.Id}{i}.jpg";
+
+                   <img src="/bookimages/@img" id="land-img4" alt="">
+                }
+
+            </div>
+        </div>
+        <div class="container">
+            <h1>@Model.CompanyName</h1>
+            <div class="rate" >
+                جودة الكتاب 
+                @{
+                    for (int i = 0; i < Model.qulaity; i++)
+                    {
+                        <i class="fa-solid fa-star"></i>
+                    }
+                    //for (int i =book.qulaity; i < 5; i++)
+                    // {
+                    //     <i class="fa-solid fa-star"></i>
+                    // }
+                }
+            </div>
+            <hr>
+            <p class="discription">
+                @Model.Description
+            </p>
+            <div class="seller">
+                <span>اسم البائع :</span>
+                <span class="back">@ViewBag.username</span>
+            </div>
+            <div class="price">
+                <span>السعر</span>
+                <span class="back">@Model.price$</span>
+            </div>
+            <div class="buy-or-back">
+                <div class="read-more">
+                    <a href="/Cart/Addbooktocart/@Model.Id">اضف الى السله</a>
+                </div>
+                <a href="/showbook/showall/0">العودة لتصفح المزيد من الكتب</a>
+            </div>
+        </div>
+    </section>
+    <!-- end book preview -->
+    <script src="/js/home.js"></script>
+</body>
+</html>

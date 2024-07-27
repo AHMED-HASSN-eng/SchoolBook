@@ -1,0 +1,149 @@
+﻿@*@model List<Book>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المرحلة الابتدائية</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/showBooks.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+    <style>
+        img {
+            width: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="books-section">
+        <header>
+            <button id="filter-button">الفلاتر</button>
+            <ul>
+                <li><a href="/showbook/showall">جميع المراحل</a></li>
+                <li><a href="/showbook/primarybook">المرحلة الابتدائية</a></li>
+                <li><a href="/showbook/middlebook">المرحلة الاعدادية</a></li>
+                <li><a href="/showbook/highbook">المرحلة الثانوية</a></li>
+            </ul>
+        </header>
+        <div class="books-preview">
+            <div class="books-container">
+                <div class="all-books">
+                    @foreach (Book item in (List<Book>)Model)
+                    {
+                        <div class="book-box">
+                            <img src="images/signIn.jpg" alt="">
+                            <div class="book-info">
+                                <h3 class="name">@item.CompanyName</h3>
+                                <div class="price-rate">
+                                    <span class="price">السعر : @item.Semseter جنية</span>
+                                    <span class="rate">
+                                        <i class="fa-light fa-star"></i>
+                                        <i class="fa-light fa-star"></i>
+                                        <i class="fa-light fa-star"></i>
+                                        <i class="fa-light fa-star"></i>
+                                        <i class="fa-light fa-star"></i>
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="book-description">
+                                كتاب الامتحان للصف الاول الثانوي , كتاب يحتوي علي الكثير من التمارين المتميزة لتنمية مهارات الطالب في اللغة العربية
+                            </p>
+                            <button>اضف الي السلة</button>
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="books-filters">
+                <div class="search-bar">
+                    <form action="">
+                        <label for="book-search">ابحث عن كتاب :</label>
+                        <input type="search" name="book-search" placeholder="ابحث عن كتاب">
+                        <input type="submit" value="ابحث">
+                    </form>
+                </div>
+                <div class="filters">
+                   
+                    <form action="">
+                        <div class="studing-stage">
+                            <h3>تحديد الصف الدراسي</h3>
+                            <div class="filter-box">
+                                <input type="checkbox" id="first-primary-stage" name="first-primary-stage">
+                                <label for="first-primary-stage"> الصف الاول الابتدائي</label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" id="second-primary-stage" name="second-primary-stage">
+                                <label for="second-primary-stage"> الصف الثاني الابتدائي</label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" id="third-primary-stage" name="third-primary-stage">
+                                <label for="third-primary-stage"> الصف الثالث الابتدائي</label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" id="fourth-primary-stage" name="fourth-primary-stage">
+                                <label for="fourth-primary-stage"> الصف الرابع الابتدائي</label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" id="fifth-primary-stage" name="fifth-primary-stage">
+                                <label for="fifth-primary-stage"> الصف الخامس الابتدائي</label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" id="sixth-primary-stage" name="sixth-primary-stage">
+                                <label for="sixth-primary-stage"> الصف السادس الابتدائي</label>
+                            </div>
+                        </div>
+                        <div class="studing-semester">
+                            <h3>تحديد الترم الدراسي</h3>
+                            <div class="filter-box">
+                                <input type="checkbox" name="first-primary-semester" id="first-primary-semester">
+                                <label for="first-primary-stage">الترم الاول </label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" name="second-primary-semester" id="second-primary-semester">
+                                <label for="second-primary-semester">الترم الثاني </label>
+                            </div>
+                        </div>
+                        <div class="price">
+                            <h3>تحديد السعر</h3>
+                            <div class="filter-box">
+                                <input type="checkbox" name="less-one-hundred" id="less-one-hundred">
+                                <label for="less-one-hundred">اقل من 100 جنية </label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" name="less-two-hundred" id="less-two-hundred">
+                                <label for="less-two-hundred">اقل من 200 جنية </label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" name="less-three-hundred" id="less-three-hundred">
+                                <label for="less-three-hundred">اقل من 300 جنية </label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" name="less-four-hundred" id="less-four-hundred">
+                                <label for="less-four-hundred">اقل من 400 جنية </label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" name="less-five-hundred" id="less-five-hundred">
+                                <label for="less-five-hundred">اقل من 500 جنية </label>
+                            </div>
+                            <div class="filter-box">
+                                <input type="checkbox" name="less-six-hundred" id="less-sex-hundred">
+                                <label for="less-sex-hundred">اقل من 600 جنية </label>
+                            </div>
+                            <input type="submit" value="ابحث">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="javascript/showBooks.js"></script>
+</body>
+</html>*@

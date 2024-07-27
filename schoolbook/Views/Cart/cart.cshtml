@@ -1,0 +1,178 @@
+﻿@{
+    Layout = null;
+}
+@model List<Cartitem>
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>سلة المشتريات</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/userProfile.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="cart-section">
+        <div id="header-icon">
+            <header>
+                <div class="container">
+                    <div id="header-links">
+                        <i class="fa-solid fa-bars" id="header-links"></i>
+                        <!-- this is horizontal list -->
+                        <ul class="header-outer-links">
+                            <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                            <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                            <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                            <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                            <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                        </ul>
+                        <!-- this is a vertical list -->
+                        <ul id="links-list" class="links-list hidden">
+                            <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                            <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                            <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                            <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                            <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                        </ul>
+                    </div>
+                    <div class="account-shop-logo">
+                        <div class="account-shop">
+                            @{
+                                if (ViewBag.logining == true)
+                                {
+                                    <div id="account">
+                                        <img src="/userimages/@ViewBag.user.Image" alt="">
+                                        <span>الحساب</span>
+                                        <ul id="account-links" class="hidden">
+                                            <li><a href="/userprofile/profile" class="inner-links">الصفحة الشخصية</a></li>
+                                            <li><a href="/EditeProfile/EditeProfile" class="inner-links">تعديل البيانات</a></li>
+                                            <li><a href="/addnewbook/addnewbook" class="inner-links">اضافة كتاب</a></li>
+                                            <li><a href="/homepage/logout" class="inner-links">تسجيل الخروج</a></li>
+                                        </ul>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div id="account">
+                                        <img src="/images/logo.png" alt="">
+                                        <span>الحساب</span>
+                                        <ul id="account-links" class="hidden">
+
+                                            <li><a href="/signin/signin" class="inner-links">تسجيل الدخول</a></li>
+                                        </ul>
+                                    </div>
+                                }
+                            }
+                            <div id="shop">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                                <!-- <span>سلة المشتريات</span>-->
+                                <a href="/cart/index" class="inner-links">سلة المشتريات</a>
+                            </div>
+                        </div>
+                        <div id="logo">
+                            <img src="/images/logo.png" alt="logo">
+                            <strong>School Book</strong>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="icon">
+                <i class="fa-solid fa-cart-shopping"></i>
+            </div>
+        </div>
+        <div class="cart">
+            <div class="container">
+                <div class="section-title">
+                    السلة
+                </div>
+                <table id="cart">
+                    <thead>
+                        <tr>
+                            <td class="delete">صورة الكتاب</td>
+                            <td>اسم الكتاب</td>
+                            <td>جودة الكتاب</td>
+                            <td>الكمية</td>
+                            <td>السعر</td>
+                            <td>حذف</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach(var item in Model)
+                        {
+
+                        <tr>
+                            <td class="delete"><img src="/images/signIn.jpg" alt="book-image"></td>
+                            <td>@item.BookName</td>
+                            <td>
+                                <span class="rate">
+                                @for (int i = 0 ; i < item.BookQuality ; i++)
+                                {
+                                          <i class="fa-solid fa-star"></i>
+                                }
+                                 
+                                </span>
+                            </td>
+                            <td>
+                                <div class="quantity">
+                                    <i class="fa-solid fa-plus" id="add-book"></i>
+                                    <textarea name="books-quantity" id="books-quantity">1</textarea>
+                                    <i class="fa-solid fa-minus" id="remove-book"></i>
+                                </div>
+                            </td>
+                            <td><span class="price">@item.BookPrice</span>جنيه</td>
+                            <td> <div><a href="/cart/DeletebooKfromcart/@item.BookId">حذف</a></div></td>
+                        </tr>
+                        }
+                    </tbody>
+                </table>
+                <div class="cart-info">
+                    <div class="total-book-address">
+                        <div class="total-books">
+                            <span class="labels">عدد الكتب</span>
+                            <span class="books-quantity">@Model.Count()</span>
+                        </div>
+                        <div class="address">
+                            <span class="labels">مكان الشحن :</span>
+                            <select name="shipping-address" id="shipping-address">
+                                <option value="القاهرة">القاهرة</option>
+                                <option value="الاسكندرية">الإسكندرية</option>
+                                <option value="البحيرة">البحيرة</option>
+                                <option value="الدقهلية">الدقهلية</option>
+                                <option value="المنيا">المنيا</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="total-shipping-price">
+                        <div class="shipping-price">
+                            <span class="labels">ثمن الشحن</span>
+                            <div class="price">
+                                <span>20</span>جنية
+                            </div>
+                        </div>
+                        <div class="total-price">
+                            <span class="labels">الثمن الكلي </span>
+                            <div class="price">
+                                <span> @ViewBag.TotalCost</span>جنية    
+                            </div>
+                        </div>
+                    </div>
+                    <div class="complete-process">
+                        <a href="/Checkout/Index" class="buy">اتمام عملية الشراء</a>
+                        <a href="/showbook/showall" class="back">الرجوع الي التسوق</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/home.js"></script>
+</body>
+</html>

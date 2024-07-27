@@ -1,0 +1,105 @@
+﻿@{
+    Layout = null;
+}
+@model User
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="data-modification-section" >
+        <form action="/EditeProfile/SaveChange/" method="post" name="data-modification" enctype="multipart/form-data">
+            <h2>تعديل البيانات.</h2>
+            <div id="full-name">
+                <div class="box">
+                    <label for="first-name">الأسم الاول :</label>
+                    <input type="text" id="FirstName" name="FirstName" placeholder="الاسم الاول" value="@Model.FirstName" required>
+                </div>
+                <div class="box">
+                    <label for="last-name">الأسم الاخير :</label>
+                    <input type="text" id="LastName" name="LastName" placeholder="الاسم الاخير" value="@Model.LastName" required>
+                </div>
+            </div>
+            <div id="full-address">
+                <div class="box">
+                    <label for="street"> الشارع / المركز:</label>
+                    <input type="text" id="Central" name="Central" placeholder=" الشارع / المركز" value="@Model.Central" required>
+                </div>
+                <div class="box">
+                    <label for="city">المحافظة :</label>
+                    <select name="Governorate" id="Governorate" onselect="@Model.Governorate" required>
+                        <option value="">اختر محافظة</option>
+                        <option value="القاهرة">القاهرة</option>
+                        <option value="الإسكندرية">الإسكندرية</option>
+                        <option value="بورسعيد">بورسعيد</option>
+                        <option value="الدقهلية">الدقهلية</option>
+                        <option value="الشرقية">الشرقية</option>
+                        <option value="القليوبية">القليوبية</option>
+                        <option value="المنوفية">المنوفية</option>
+                        <option value="الغربية">الغربية</option>
+                        <option value="كفر الشيخ">كفر الشيخ</option>
+                        <option value="الإسماعيلية">الإسماعيلية</option>
+                        <option value="السويس">السويس</option>
+                        <option value="شمال سيناء">شمال سيناء</option>
+                        <option value="جنوب سيناء">جنوب سيناء</option>
+                        <option value="الجيزة">الجيزة</option>
+                        <option value="البحر الأحمر">البحر الأحمر</option>
+                        <option value="الوادي الجديد">الوادي الجديد</option>
+                        <option value="مطروح">مطروح</option>
+                        <option value="أسوان">أسوان</option>
+                        <option value="سوهاج">سوهاج</option>
+                        <option value="قنا">قنا</option>
+                        <option value="الأقصر">الأقصر</option>
+                        <option value="السادس من أكتوبر">السادس من أكتوبر</option>
+                        <option value="المنيا">المنيا</option>
+                    </select>
+                </div>
+            </div>
+            <div id="email-container">
+                <div class="box">
+                    <label for="email">البريد الألكتروني :</label>
+                    <input type="email" name="Email" id="Email" placeholder="البريد الألكتروني" value="@Model.Email" required>
+                </div>
+                <div class="box">
+                    <label for="phone">رقم الهاتف :</label>
+                    <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="رقم الهاتف" value="@Model.PhoneNumber" required maxlength="11" minlength="11">
+                </div>
+            </div>
+            <div id="upload-facebook">
+                <div class="box">
+                    <label for="file">اضافة صورة :</label>
+                    <input type="file" name="file" id="image">
+                </div>
+                <div class="box">
+                    <label for="facebook-link">حساب الفيس بوك :</label>
+                    <input type="text" name="facebook-link" id="facebook-link" placeholder="حساب الفيس بوك">
+                </div>
+            </div>
+            <div id="twitter-instagram">
+                <div class="box">
+                    <label for="twitter-link">حساب تويتر :</label>
+                    <input type="text" name="twitter-link" id="twitter-link" placeholder="حساب تويتر">
+                </div>
+                <div class="box">
+                    <label for="instagram-link">حساب الانستجرام :</label>
+                    <input type="text" name="instagram-link" id="instagram-link" placeholder="حساب الانستجرام">
+                </div>
+            </div>
+            <input type="submit" value="حفظ التغيير">
+        </form>
+    </section>
+</body>
+</html>

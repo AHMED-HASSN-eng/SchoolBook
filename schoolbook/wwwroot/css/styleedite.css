@@ -1,0 +1,221 @@
+/* start gloubal rulls */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cairo, sans-serif;
+    font-weight: 300;
+    direction: rtl;
+}
+
+img {
+    max-width: 100%;
+}
+/* end gloubal rulls */
+
+/* start sign-up , sign-in section */
+#sign-up-section,
+#sign-in-section,
+#data-modification-section {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+#sign-up-section form,
+#data-modification-section form { 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    box-shadow: 0 0 20px -3px lightseagreen, 0 0 10px -3px black;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+@media (max-width:765px) {
+    form {
+        margin: auto;
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (min-width:768px) {
+    form {
+        width: 750px;
+    }
+}
+
+/* medim screen */
+@media (min-width:992px) {
+    form {
+        width: 970px;
+    }
+}
+
+/* big screen */
+@media (min-width:1200px) {
+    form {
+        width: 1170px;
+    }
+}
+
+/* start general style between sign in and sign up section */
+form h2 {
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    outline: none;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    caret-color: #06BBCC;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+input:focus {
+    border-color: transparent transparent #06BBCC;
+}
+
+select {
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+
+input[type="submit"] {
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    margin-top: 40px;
+}
+
+input[type="submit"]:hover {
+    background-color: #06BBCC;
+    color: white;
+}
+
+form a {
+    color: #06BBCC;
+    font-weight: bold;
+}
+
+/* end general style between sign in and sign up section */
+
+#full-name,
+#full-address,
+#email-container,
+#upload-facebook,
+#twitter-instagram {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+@media(max-width:765px) {
+    #full-name,
+    #full-address,
+    #email-container,
+    #upload-facebook,
+    #twitter-instagram {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+#phone-container {
+    width: 100%;
+}
+
+form #terms-member {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:765px) {
+    form #terms-member {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* this part for different part in sign-in form */
+#sign-in-section .form-content {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+}
+
+#sign-in-section .form-content form {
+    min-width: 450px;
+    max-width: 700px;
+    padding: 20px;
+}
+
+
+
+@media (max-width:992px) {
+    #sign-in-section .form-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    #sign-in-section .form-content form {
+        min-width: 0;
+    }
+}
+
+#sign-in-section #email-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sign-in-section .form-content form .box {
+    width: 100%;
+}
+
+#sign-in-section .form-content input[type="submit"] {
+    display: block;
+    margin: 40px auto 30px;
+}
+
+#sign-in-section .form-content a {
+    display: block;
+    text-align: center;
+}
+
+#sign-in-section .form-content .image-container {
+    max-width: 600px;
+}

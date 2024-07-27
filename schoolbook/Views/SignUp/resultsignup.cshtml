@@ -1,0 +1,99 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-Up</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="form-section" >
+        <form action="/signup/resultsignup" method="post" name="Sign-Up">
+            <h2>إنشاء حساب.</h2>
+            <div id="full-name">
+                <div class="box">
+                    <label for="first-name">الأسم الاول :</label>
+                    <input type="text" id="FirstName" name="FirstName" placeholder="الاسم الاول" required>
+                </div>
+                <div class="box">
+                    <label for="last-name">الأسم الاخير :</label>
+                    <input type="text" id="LastName" name="LastName" placeholder="الاسم الاخير" required>
+                </div>
+            </div>
+            <div id="full-address">
+                <div class="box">
+                    <label for="street"> الشارع / المركز:</label>
+                    <input type="text" id="Central" name="Central" placeholder=" الشارع / المركز" required>
+                </div>
+                <div class="box">
+                    <label for="city">المحافظة :</label>
+                    <select name="Governorate" id="Governorate" required>
+                        <option value="" selected="selected">اختر محافظة</option>
+                        <option value="القاهرة">القاهرة</option>
+                        <option value="الإسكندرية">الإسكندرية</option>
+                        <option value="بورسعيد">بورسعيد</option>
+                        <option value="الدقهلية">الدقهلية</option>
+                        <option value="الشرقية">الشرقية</option>
+                        <option value="القليوبية">القليوبية</option>
+                        <option value="المنوفية">المنوفية</option>
+                        <option value="الغربية">الغربية</option>
+                        <option value="كفر الشيخ">كفر الشيخ</option>
+                        <option value="الإسماعيلية">الإسماعيلية</option>
+                        <option value="السويس">السويس</option>
+                        <option value="شمال سيناء">شمال سيناء</option>
+                        <option value="جنوب سيناء">جنوب سيناء</option>
+                        <option value="الجيزة">الجيزة</option>
+                        <option value="البحر الأحمر">البحر الأحمر</option>
+                        <option value="الوادي الجديد">الوادي الجديد</option>
+                        <option value="مطروح">مطروح</option>
+                        <option value="أسوان">أسوان</option>
+                        <option value="سوهاج">سوهاج</option>
+                        <option value="قنا">قنا</option>
+                        <option value="الأقصر">الأقصر</option>
+                        <option value="السادس من أكتوبر">السادس من أكتوبر</option>
+                        <option value="المنيا">المنيا</option>
+                    </select>
+                </div>
+            </div>
+            <div id="phone-container">
+                <div class="box">
+                    <label for="phone">رقم الهاتف :</label>
+                    <input type="tel" name="PhoneNumber" id="PhoneNumber" placeholder="رقم الهاتف" required maxlength="11" minlength="11">
+                </div>
+            </div>
+            <div id="email-container">
+                <div class="box">
+                    <label for="email">البريد الألكتروني :</label>
+                    <input type="email" name="Email" id="Email" placeholder="البريد الألكتروني" required>
+                </div>
+                <div class="box">
+                    <label for="password">كلمة المرور :</label>
+                    <input type="password" name="Password" id="Password" placeholder="كلمة المرور" required>
+                </div>
+            </div>
+            <input type="submit" value="تسجيل">
+            <div id="terms-member">
+                <div class="terms">
+                    <input type="checkbox" name="terms" id="terms" required>
+                    <label for="terms">لقد قراءة و موافق علي <a href="#" target="_blank">شروط الخدمة</a></label>
+                </div>
+                <a href="/signin/signin">انا بالفعل مشترك في الموقع</a>
+            </div>
+        </form>
+    </section>
+</body>
+</html>
+

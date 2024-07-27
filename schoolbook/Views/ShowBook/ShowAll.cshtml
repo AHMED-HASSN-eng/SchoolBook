@@ -1,0 +1,255 @@
+﻿@{
+    Layout = null;
+}
+@model List<Book>
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>المرحلة الابتدائية</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/showBooks.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="books-section">
+        <header>
+            <div class="container">
+                <div id="header-links">
+                    <i class="fa-solid fa-bars" id="header-links"></i>
+                    <!-- this is horizontal list -->
+                    <ul class="header-outer-links">
+                        <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                        <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                        <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                        <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                            <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                    </ul>
+                    <!-- this is a vertical list -->
+                    <ul id="links-list" class="links-list hidden">
+                        <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                        <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                        <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                        <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                        <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                    </ul>
+                </div>
+                <div class="account-shop-logo">
+                    <div class="account-shop">
+                        @{
+                            if (ViewBag.logining == true)
+                            {
+                                <div id="account">
+                                    <img src="/userimages/@ViewBag.user.Image" alt="">
+                                    <span>الحساب</span>
+                                    <ul id="account-links" class="hidden">
+                                        <li><a href="/userprofile/profile" class="inner-links">الصفحة الشخصية</a></li>
+                                        <li><a href="/EditeProfile/EditeProfile" class="inner-links">تعديل البيانات</a></li>
+                                        <li><a href="/addnewbook/addnewbook" class="inner-links">اضافة كتاب</a></li>
+                                        <li><a href="/homepage/logout" class="inner-links">تسجيل الخروج</a></li>
+                                    </ul>
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="account">
+                                    <img src="/images/logo.png" alt="">
+                                    <span>الحساب</span>
+                                    <ul id="account-links" class="hidden">
+
+                                        <li><a href="/signin/signin" class="inner-links">تسجيل الدخول</a></li>
+                                    </ul>
+                                </div>
+                            }
+                        }
+                        <div id="shop">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <!-- <span>سلة المشتريات</span>-->
+                            <a href="/cart/index" class="inner-links">سلة المشتريات</a>
+                        </div>
+                    </div>
+                    <div id="logo">
+                        <img src="/images/logo.png" alt="logo">
+                        <strong>School Book</strong>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="books-preview">
+            <div class="books-container">
+                <div class="all-books">
+                   @foreach(Book item in (List<Book>)Model)
+                    {
+                        <div class="book-box">
+                            <img src="/images/img-1.jpg" alt="">
+                            <div class="book-info">
+                                <h3 class="name">@item.CompanyName</h3>
+                                <div class="price-rate">
+									<span class="price">السعر : @item.price   جنية</span>
+                                    <span class="rate">
+                                        جودة الكتاب 
+                                        @{
+                                            for (int i = 0; i < item.qulaity; i++)
+                                            {
+                                                <i class="fa-solid fa-star"></i>
+                                            }
+                                            //for (int i =book.qulaity; i < 5; i++)
+                                            // {
+                                            //     <i class="fa-solid fa-star"></i>
+                                            // }
+                                         }
+                                    </span>
+                                </div>
+                            </div>
+                            <p class="book-description">
+                               @item.Description
+                            </p>
+                            <div class="read-more">
+                                <a href="/bookdetials/index/@item.Id">اقراء المزيد</a>
+                                <i class="fa-regular fa-hand-point-left"></i>
+                            </div>
+                            <div class="read-more">
+                                <a href="/Cart/Addbooktocart/@item.Id">اضف الى السله</a>
+                                <i class="fa-regular fa-hand-point-left"></i>
+                            </div>
+                            <!--<button">اضف الي السلة</>-->
+                        </div>
+                    }
+               
+                </div>
+            </div>
+            <div class="books-filters">
+                <div class="search-bar">
+                    <form action="/ShowBook/search" method="post">
+                        <label for="book-search">ابحث عن كتاب :</label>
+                        <input type="search" name="trem" placeholder="ابحث عن كتاب">
+                        <input type="submit" value="ابحث">
+                    </form>
+                </div>
+                <div class="books-filters">
+                   
+                    <div class="filters">
+                        <h2> الفلاتر :</h2>
+                        <form action="/ShowBook/search_term/@ViewBag.id" method="post">
+                            @if (@ViewBag.id == 1)
+                            {
+                                <div class="studing-stage">
+                                    <h3>تحديد الصف الدراسي</h3>
+                                    <div class="filter-box">
+                                        <input type="checkbox" id="first-primary-stage" name="first" value="الاول">
+                                        <label for="first-primary-stage"> الصف الاول الابتدائي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" id="second-primary-stage" name="second" value="الثاني">
+                                        <label for="second-primary-stage"> الصف الثاني الابتدائي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" id="third-primary-stage" name="third" value="الثالث">
+                                        <label for="third-primary-stage"> الصف الثالث الابتدائي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" id="fourth-primary-stage" name="fourth" value="الرابع">
+                                        <label for="fourth-primary-stage"> الصف الرابع الابتدائي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" id="fifth-primary-stage" name="fifth" value="الخامس">
+                                        <label for="fifth-primary-stage"> الصف الخامس الابتدائي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" id="sixth-primary-stage" name="sixth" value="السادس">
+                                        <label for="sixth-primary-stage"> الصف السادس الابتدائي</label>
+                                    </div>
+                                </div>
+                            }
+                            @if (@ViewBag.id == 2)
+                            {
+                                <div class="studing-stage">
+                                    <h3>تحديد الصف الدراسي</h3>
+                                    <div class="filter-box" id="test">
+                                        <input type="checkbox" id="first-middle-stage" name="first" value="الاول">
+                                        <label for="first-middle-stage"> الصف الاول الاعدادي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" name="second" id="second-middle-stage" value="الثاني">
+                                        <label for="second-middle-stage">الصف الثاني الاعدادي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" name="third" id="third-middle-stage" value="الثالث">
+                                        <label for="third-middle-stage">الصف الثالث الاعدادي</label>
+                                    </div>
+                                </div>
+                            }
+                            @if (@ViewBag.id == 3)
+                            {
+                                <div class="studing-stage">
+                                    <h3>تحديد الصف الدراسي</h3>
+                                    <div class="filter-box" id="test">
+                                        <input type="checkbox" id="first-high-stage" name="first" value="الاول">
+                                        <label for="first-high-stage"> الصف الاول الثانوي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" name="second" id="second-high-stage" value="الثاني">
+                                        <label for="second-high-stage">الصف الثاني الثانوي</label>
+                                    </div>
+                                    <div class="filter-box">
+                                        <input type="checkbox" name="third" id="third-high-stage" value="الثالث">
+                                        <label for="third-high-stage">الصف الثالث الثانوي</label>
+                                    </div>
+                                </div>
+                            }
+                            <div class="studing-semester">
+                                <h3>تحديد الترم الدراسي</h3>
+                                <div class="filter-box">
+                                    <input type="radio" name="trem" id="first-semester" value="1">
+                                    <label for="first-semester">الترم الاول  </label>
+                                </div>
+                                <div class="filter-box">
+                                    <input type="radio" name="trem" id="second-semester" value="2">
+                                    <label for="second-semester">الترم الثاني  </label>
+                                </div>
+                            </div>
+                            <div class="price">
+                                <h3>تحديد السعر</h3>
+                                <div class="filter-box">
+                                    <input type="radio" name="price" id="less-one-hundred" value="100">
+                                    <label for="less-one-hundred">اقل من 100 جنية </label>
+                                </div>
+                                <div class="filter-box">
+                                    <input type="radio" name="price" id="less-two-hundred" value="200">
+                                    <label for="less-two-hundred">اقل من 200 جنية </label>
+                                </div>
+                                <div class="filter-box">
+                                    <input type="radio" name="price" id="less-three-hundred" value="300">
+                                    <label for="less-three-hundred">اقل من 300 جنية </label>
+                                </div>
+                                <div class="filter-box">
+                                    <input type="radio" name="price" id="less-four-hundred" value="400">
+                                    <label for="less-four-hundred">اقل من 400 جنية </label>
+                                </div>
+                                <div class="filter-box">
+                                    <input type="radio" name="price" id="less-five-hundred" value="500">
+                                    <label for="less-five-hundred">اقل من 500 جنية </label>
+                                </div>
+                                <div class="filter-box">
+                                    <input type="radio" name="price" id="less-sex-hundred" value="600">
+                                    <label for="less-sex-hundred">اقل من 600 جنية </label>
+                                </div>
+                                <input type="submit" value="ابحث">
+                            </div>
+                        </form>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <script src="/js/home.js"></script>
+</body>
+</html>

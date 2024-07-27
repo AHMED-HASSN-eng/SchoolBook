@@ -1,0 +1,416 @@
+﻿@{
+    Layout = null;
+}
+@model List<Book>
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>الصفحة الرئيسية</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="landing">
+        <!-- start header -->
+        <header>
+            <div class="container">
+                <div id="header-links">
+                    <i class="fa-solid fa-bars" id="header-links"></i>
+                    <!-- this is horizontal list -->
+                    <ul class="header-outer-links">
+                        <li><a href="/Homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                        <li><a href="/ShowBook/ShowAll/1" class="outer-link">المرحلة الابتدائية</a></li>
+                        <li><a href="/ShowBook/ShowAll/2" class="outer-link">المرحلة الاعدادية</a></li>
+                        <li><a href="/ShowBook/ShowAll/3" class="outer-link">المرحلة الثانوية</a></li>
+                        <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                    </ul>
+                    <!-- this is a vertical list -->
+                    <ul id="links-list" class="links-list hidden">
+                        <li><a href="/Homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                        <li><a href="/ShowBook/ShowAll/1" class="outer-link">المرحلة الابتدائية</a></li>
+                        <li><a href="/ShowBook/ShowAll/2" class="outer-link">المرحلة الاعدادية</a></li>
+                        <li><a href="/ShowBook/ShowAll/3" class="outer-link">المرحلة الثانوية</a></li>
+                        <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                    </ul>
+                </div>
+                <div class="account-shop-logo">
+                    <div class="account-shop">
+                        @{
+                            if (ViewBag.logining == true)
+                            {
+                                <div id="account">
+                                    <img src="/userimages/@ViewBag.user.Image" alt="">
+                                    <span>الحساب</span>
+                                    <ul id="account-links" class="hidden">
+                                        <li><a href="/userprofile/profile" class="inner-links">الصفحة الشخصية</a></li>
+                                        <li><a href="/EditeProfile/EditeProfile" class="inner-links">تعديل البيانات</a></li>
+                                        <li><a href="/addnewbook/addnewbook" class="inner-links">اضافة كتاب</a></li>
+                                        <li><a href="/homepage/logout" class="inner-links">تسجيل الخروج</a></li>
+                                    </ul>
+                                </div>
+                            }
+                            else
+                            {
+                                <div id="account">
+                                    <img src="/images/logo.png" alt="">
+                                    <span>الحساب</span>
+                                    <ul id="account-links" class="hidden">
+
+                                        <li><a href="/signin/signin" class="inner-links">تسجيل الدخول</a></li>
+                                    </ul>
+                                </div>
+                            }
+                        }
+                        <div id="shop">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <!-- <span>سلة المشتريات</span>-->
+                            <a href="/cart/index" class="inner-links">سلة المشتريات</a>
+                        </div>
+                    </div>
+                    <div id="logo">
+                        <img src="/images/logo.png" alt="logo">
+                        <strong>School Book</strong>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- end header -->
+        <!-- start landing -->
+        <div id="landing-content">
+            <div class="image-box">
+                <img src="/images/Landing_BG.jpg" id="preview">
+                <div class="small-images">
+                    <img src="/images/img-4.jpg" id="land-img4" alt="">
+                    <img src="/images/img-3.jpg" id="land-img3" alt="">
+                    <img src="/images/img-2.jpg" id="land-img2" alt="">
+                    <img src="/images/img-1.jpg" id="land-img1" alt="">
+                    <img src="/images/Landing_BG.jpg" id="land-img" alt="">
+                </div>
+            </div>
+            <div class="landing-description">
+                <h1>School Book</h1>
+                <p>
+                    موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+                    لجميع المراحل الدراسية المختلفة (الابتدائية , الاعدادية , الثانوية)
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end landing -->
+    <!-- start services -->
+    <section id="services">
+        <div class="section-title">خدماتنا</div>
+        <div class="container">
+            <div class="service-cart">
+                <img src="/images/Sell.jpg" alt="">
+                <h2>بيع</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-plus"></i>
+                        <p>إعرض ما تريد من الكتب المستعملة لديك علي موقعنا </p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>نتولي عملية شحن الكتاب الي المشتري</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-money-bill-1"></i>
+                        <p>عند اتمام عملية الشراء يتم ارسال النقود الي حسابك</p>
+                    </li>
+                </ul>
+                <a href="/addnewbook/addnewbook">إضافة كتاب</a>
+            </div>
+            <div class="service-cart">
+                <img src="/images/buy-img.png" alt="">
+                <h2>شراء</h2>
+                <ul>
+                    <li>
+                        <i class="fa-solid fa-binoculars"></i>
+                        <p>تصفح جميع الكتب الموجودة لدينا علي الموقع</p>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-money-bill-1"></i>
+                        <p>يمكنك شراء الكتب المستعملة التي تريدها</p>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-truck-fast"></i>
+                        <p>يتم توصيل الكتب الي المكان الذي تريده</p>
+                    </li>
+                </ul>
+                <a href="/showbook/showall/0">تصفح الكتب</a>
+            </div>
+        </div>
+    </section>
+    <section id="books">
+        <div class="section-title">
+            الكتب
+        </div>
+        <div class="container">
+            @foreach (Book book in (List<Book>)Model)
+            {
+                //string img = $"{book.Id}{@ViewBag.user.Id}{1}.jpg";
+                <div class="book-box">
+                    <img src="/images/img-1.jpg" alt="">
+                    <h2>@book.CompanyName</h2>
+                    <div class="rate">
+                        جودة الكتاب 
+                        @{
+                            for (int i = 0; i < book.qulaity; i++)
+                            {
+                                <i class="fa-solid fa-star"></i>
+                            }
+                        }
+                    </div>
+                    <div class="book-discription">
+                        <p>
+                            @book.Description
+                        </p>
+                        <div class="read-more">
+                            <a href="/BookDetials/index/@book.Id">اقراء المزيد</a>
+                            <i class="fa-regular fa-hand-point-left"></i>
+                        </div>
+                    </div>
+                    <div class="price">
+                        <span>السعر :</span>
+                        <span>@book.price$</span>
+                    </div>
+                    <div class="read-more">
+                        <a href="/Cart/Addbooktocart/@book.Id">اضف الى السله</a>
+                        <i class="fa-regular fa-hand-point-left"></i>
+                    </div>
+                </div>
+            }
+            <div class="more-books">
+                <a href="/showbook/showall/0">تصفح المزيد من الكتب</a>
+                <i class="fa-regular fa-hand-point-left"></i>
+            </div>
+        </div>
+        @*<div class="book-box">
+        <img src="/images/img-4.jpg" alt="">
+        <h2>اسم الكتاب</h2>
+        <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="book-discription">
+        <p>
+        موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+        لجميع المراحل الدراسية المختلفة
+        </p>
+        <div class="read-more">
+        <a href="/BookDetials/showdetials">اقراء المزيد</a>
+        <i class="fa-regular fa-hand-point-left"></i>
+        </div>
+        </div>
+        <div class="price">
+        <span>السعر :</span>
+        <span>60$</span>
+        </div>
+        <button>إضافة للسلة</button>
+        </div>
+        <div class="book-box">
+        <img src="/images/img-4.jpg" alt="">
+        <h2>اسم الكتاب</h2>
+        <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="book-discription">
+        <p>
+        موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+        لجميع المراحل الدراسية المختلفة
+        </p>
+        <div class="read-more">
+        <a href="/BookDetials/showdetials">اقراء المزيد</a>
+        <i class="fa-regular fa-hand-point-left"></i>
+        </div>
+        </div>
+        <div class="price">
+        <span>السعر :</span>
+        <span>60$</span>
+        </div>
+        <button>إضافة للسلة</button>
+        </div>
+        <div class="book-box">
+        <img src="/images/img-4.jpg" alt="">
+        <h2>اسم الكتاب</h2>
+        <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="book-discription">
+        <p>
+        موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+        لجميع المراحل الدراسية المختلفة
+        </p>
+        <div class="read-more">
+        <a href="/BookDetials/showdetials">اقراء المزيد</a>
+        <i class="fa-regular fa-hand-point-left"></i>
+        </div>
+        </div>
+        <div class="price">
+        <span>السعر :</span>
+        <span>60$</span>
+        </div>
+        <button>إضافة للسلة</button>
+        </div>
+        <div class="book-box">
+        <img src="/images/img-4.jpg" alt="">
+        <h2>اسم الكتاب</h2>
+        <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="book-discription">
+        <p>
+        موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+        لجميع المراحل الدراسية المختلفة
+        </p>
+        <div class="read-more">
+        <a href="/BookDetials/showdetials">اقراء المزيد</a>
+        <i class="fa-regular fa-hand-point-left"></i>
+        </div>
+        </div>
+        <div class="price">
+        <span>السعر :</span>
+        <span>60$</span>
+        </div>
+        <button>إضافة للسلة</button>
+        </div>
+        <div class="book-box">
+        <img src="/images/img-4.jpg" alt="">
+        <h2>اسم الكتاب</h2>
+        <div class="rate">
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        <i class="fa-solid fa-star"></i>
+        </div>
+        <div class="book-discription">
+        <p>
+        موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+        لجميع المراحل الدراسية المختلفة
+        </p>
+        <div class="read-more">
+        <a href="/BookDetials/showdetials">اقراء المزيد</a>
+        <i class="fa-regular fa-hand-point-left"></i>
+        </div>
+        </div>
+        <div class="price">
+        <span>السعر :</span>
+        <span>60$</span>
+        </div>
+        <button>إضافة للسلة</button>
+        </div>*@
+
+
+
+    </section>
+    <!-- end services -->
+    <!-- start testimonials section -->
+    <section id="testimonials">
+        <div class="section-title">اراء العملاء</div>
+        <div class="container">
+            <div class="test-box">
+                <img src="/images/avatar-01.png" alt="">
+                <h3>Mohamed Farag</h3>
+                <p>
+                    موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+                    لجميع المراحل الدراسية المختلفة (الابتدائية , الاعدادية , الثانوية)
+                </p>
+            </div>
+            <div class="test-box">
+                <img src="/images/avatar-02.png" alt="">
+                <h3>Mohamed Ibrahim</h3>
+                <p>
+                    موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+                    لجميع المراحل الدراسية المختلفة (الابتدائية , الاعدادية , الثانوية)
+                </p>
+            </div>
+            <div class="test-box">
+                <img src="/images/avatar-03.png" alt="">
+                <h3>Shady Nabil</h3>
+                <p>
+                    موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+                    لجميع المراحل الدراسية المختلفة (الابتدائية , الاعدادية , الثانوية)
+                </p>
+            </div>
+            <div class="test-box">
+                <img src="/images/avatar-04.png" alt="">
+                <h3>Amr Hendawy</h3>
+                <p>
+                    موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+                    لجميع المراحل الدراسية المختلفة (الابتدائية , الاعدادية , الثانوية)
+                </p>
+            </div>
+            <div class="test-box">
+                <img src="/images/avatar-05.png" alt="">
+                <h3>Sherief Ashraf</h3>
+                <p>
+                    موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+                    لجميع المراحل الدراسية المختلفة (الابتدائية , الاعدادية , الثانوية)
+                </p>
+            </div>
+            <div class="test-box">
+                <img src="/images/avatar-06.png" alt="">
+                <h3>Osama Mohamed</h3>
+                <p>
+                    موقع متخصص في بيع الكتب الدراسية الخارجية المستعملة
+                    لجميع المراحل الدراسية المختلفة (الابتدائية , الاعدادية , الثانوية)
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- end testimonials section -->
+    <!-- start contact us -->
+@*    <section id="contact-us">
+        <div class="section-title">اتصل بنا</div>
+        <form action="" method="" name="Sign-Up">
+            <div id="full-name">
+                <div class="box">
+                    <label for="first-name">الأسم الاول :</label>
+                    <input type="text" id="first-name" name="first-name" placeholder="الاسم الاول" required>
+                </div>
+                <div class="box">
+                    <label for="last-name">الأسم الاخير :</label>
+                    <input type="text" id="last-name" name="last-name" placeholder="الاسم الاخير" required>
+                </div>
+            </div>
+
+            <div id="email-container">
+                <div class="box">
+                    <label for="email">البريد الألكتروني :</label>
+                    <input type="email" name="email" id="email" placeholder="البريد الألكتروني" required>
+                </div>
+            </div>
+            <input type="submit" value="ارسل">
+        </form>
+    </section>*@
+    <!-- end contact us -->
+    <script src="/js/home.js"></script>
+</body>
+</html>

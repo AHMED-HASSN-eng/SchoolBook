@@ -1,0 +1,29 @@
+﻿@using Newtonsoft.Json.Linq
+@model JArray
+
+@{
+    ViewData["Title"] = "Results";
+}
+
+<h2>Evaluation Results</h2>
+
+<ul>
+    @foreach (var result in Model)
+    {
+        <li>Image Quality Score: @result["quality_score"]</li>
+        <li>Handwriting Detected: @(result["handwriting_detected"].Value<bool>() ? "Yes" : "No")</li>
+        <li>Handwriting Ratio: @result["handwriting_ratio"]</li>
+    }
+</ul>
+
+@if (Model.Any(result => result["error"] != null))
+{
+    <h3>Errors</h3>
+    <ul>
+        @foreach (var result in Model.Where(result => result["error"] != null))
+        {
+            <li>Error: @result["error"]</li>
+        }
+        }
+    </ul>
+}

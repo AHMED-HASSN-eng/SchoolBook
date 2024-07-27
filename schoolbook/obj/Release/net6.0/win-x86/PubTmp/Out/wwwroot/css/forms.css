@@ -1,0 +1,398 @@
+/* start sign-up , sign-in section */
+#sign-up-section,
+#sign-in-section,
+#contact-us,
+#data-modification-section {
+    background-color: #f8f8f8;
+    padding: 80px 0;
+}
+
+#sign-up-section form,
+#contact-us form,
+#data-modification-section form { 
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    background-color: white;
+    box-shadow: 0 0 20px -3px lightseagreen, 0 0 10px -3px black;
+    border-radius: 20px;
+    padding: 30px;
+}
+
+@media (max-width:765px) {
+    form {
+        margin: auto;
+        width: 90%;
+        padding: 15px;
+    }
+}
+
+@media (min-width:768px) {
+    form {
+        width: 750px;
+    }
+}
+
+/* medim screen */
+@media (min-width:992px) {
+    form {
+        width: 970px;
+    }
+}
+
+/* big screen */
+@media (min-width:1200px) {
+    form {
+        width: 1170px;
+    }
+}
+
+/* start general style between sign in and sign up section */
+form h2 {
+    font-size: 40px;
+    text-align: center;
+    
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    outline: none;
+    border: 2px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+    caret-color: #06BBCC;
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+input:focus {
+    border-color: transparent transparent #06BBCC;
+}
+
+select {
+    outline: none;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 45%;
+}
+
+input[type="submit"] {
+    background-color: white;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    margin-top: 40px;
+}
+
+input[type="submit"]:hover {
+    background-color: #06BBCC;
+    color: white;
+}
+
+form a {
+    color: #06BBCC;
+    font-weight: bold;
+}
+
+/* end general style between sign in and sign up section */
+#full-name,
+#full-address,
+#email-container,
+#upload-facebook,
+#twitter-instagram {
+    width: 100%;
+    display: flex;
+    gap: 50px;
+}
+
+@media(max-width:765px) {
+    #full-name,
+    #full-address,
+    #email-container,
+    #upload-facebook,
+    #twitter-instagram {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+    }
+}
+
+#phone-container {
+    width: 100%;
+}
+
+form #terms-member {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width:765px) {
+    form #terms-member {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+/* this part for different part in sign-in form */
+#sign-in-section .form-content {
+    display: flex;
+    background-color: white;
+    justify-content: space-around;
+}
+
+#sign-in-section .form-content form {
+    min-width: 450px;
+    max-width: 700px;
+    padding: 20px;
+}
+
+@media (max-width:992px) {
+    #sign-in-section .form-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    #sign-in-section .form-content form {
+        min-width: 0;
+    }
+}
+
+#sign-in-section #email-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#sign-in-section .form-content form .box {
+    width: 100%;
+}
+
+#sign-in-section .form-content input[type="submit"] {
+    display: block;
+    margin: 40px auto 30px;
+}
+
+#sign-in-section .form-content a {
+    display: block;
+    text-align: center;
+}
+
+#sign-in-section .form-content .image-container {
+    max-width: 600px;
+}
+
+/* start design of add book page */
+#add-book {
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+}
+
+#add-book .content {
+    background-image: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    padding-bottom: var(--section-padding);
+}
+
+#add-book .content .container.icon-container {
+    display: flex;
+    justify-content: center;
+    padding: var(--section-padding) 0;
+    box-shadow: 0px 0px 5px white;
+    border-radius: 20px;
+    margin: 10px auto;
+    border-width: 5px;
+    border-style: solid;
+    border-color: var(--main-azure) var(--main-green);
+}
+
+#add-book .content .container i.fa-images {
+    font-size: 150px;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #eee3;
+    border-radius: 50%;
+    color: var(--main-azure);
+    animation: change-colors 4s linear infinite;
+    -webkit-animation: change-colors 4s linear infinite;
+}
+
+#add-book .form-content {
+    padding: var(--section-padding) 0;
+}
+
+#add-book form {
+    padding: 15px;
+    box-shadow: 0px 0px 5px black;
+    border-radius: 20px;
+    background-color: #eee3;
+}
+
+#add-book form #name-subject,
+#add-book form #stage-level, 
+#add-book form #semester-subject {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+@media (max-width:767px) {
+    #add-book form #name-subject,
+    #add-book form #stage-level,
+    #add-book form #semester-subject {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+#add-book form .title {
+    text-align: center;
+    font-weight: 700;
+    text-shadow: 1px 1px 5px white;
+    margin: 10px 0px;
+}
+
+#add-book form label {
+    font-weight: bold;
+    width: fit-content;
+    padding: 10px;
+    background-color: var(--seconde-azure);
+    color: #000000b3;
+}
+
+#add-book form #stage-level .stage {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#add-book form #stage-level .stage .primary-stage,
+#add-book form #stage-level .stage .middle-stage,
+#add-book form #stage-level .stage .high-stage {
+    padding: 10px 5px;
+    background-color: #eee;
+    border-radius: 5px;
+}
+
+#add-book form #stage-level .stage .high-stage ul {
+    margin-top: 25px;
+}
+
+#add-book form #stage-level .stage .high-stage ul li {
+    padding: 10px 5px;
+}
+
+#add-book form #stage-level .stage label {
+    background-color: transparent;
+    padding: 5px;
+}
+
+#add-book form textarea {
+    resize: none;
+    width: 100%;
+    border: none;
+    padding: 15px;
+    outline: 0;
+    caret-color: var(--main-azure);
+    height: 100px;
+    border-radius: 10px;
+}
+
+#add-book table {
+    width: 100%;
+    text-align: center;
+    background: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+#add-book table thead td {
+    padding: 0px 0px 20px;
+    font-weight: 400;
+}
+
+#add-book table tbody td {
+    border: .5px solid #3F51B5;
+    font-weight: bold;
+}
+
+/* ******************************************** */
+.upload-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.upload-container input[type="file"] {
+    display: none;
+}
+
+.upload-container label {
+    padding: 10px 20px;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.upload-container button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    opacity: 0.5;
+    /* Disable button initially */
+}
+
+.image-preview {
+    width: 200px;
+    height: 200px;
+    background-repeat: no-repeat;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.image-preview {
+    width: 100px;
+    /* Adjust width as needed */
+    height: 100px;
+    /* Adjust height as needed */
+    background-repeat: no-repeat;
+    margin: 5px;
+    /* Adjust margin as needed */
+    border: 1px solid #ddd;
+    display: inline-block;
+}
+
+
+@keyframes change-colors {
+    50% {
+        background-color: var(--main-azure);
+        color: white;
+    }
+    100%{
+        background-color: #eee3;
+        color: var(--main-azure);
+    }
+}

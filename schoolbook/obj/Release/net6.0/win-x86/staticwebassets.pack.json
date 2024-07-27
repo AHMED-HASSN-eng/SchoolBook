@@ -1,0 +1,601 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\obj\\Release\\net6.0\\win-x86\\scopedcss\\projectbundle\\schoolbook.bundle.scp.css",
+      "PackagePath": "staticwebassets\\schoolbook.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\209911.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\209911.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\209912.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\209912.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\209913.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\209913.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\209914.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\209914.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\209915.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\209915.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210011.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210011.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210012.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210012.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210013.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210013.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210014.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210014.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210015.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210015.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210111.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210111.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210112.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210112.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210113.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210113.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210114.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210114.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210115.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210115.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210211.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210211.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210212.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210212.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210213.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210213.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210214.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210214.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210215.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210215.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210311.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210311.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210312.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210312.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210313.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210313.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210314.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210314.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210315.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210315.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210411.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210411.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210412.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210412.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210413.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210413.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210414.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210414.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210415.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210415.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210511.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210511.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210512.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210512.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210513.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210513.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210514.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210514.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\bookimages\\210515.jpg",
+      "PackagePath": "staticwebassets\\bookimages\\210515.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\all.min.css",
+      "PackagePath": "staticwebassets\\css\\all.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\cart.css",
+      "PackagePath": "staticwebassets\\css\\cart.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\forms.css",
+      "PackagePath": "staticwebassets\\css\\forms.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\home.css",
+      "PackagePath": "staticwebassets\\css\\home.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\normalize.css",
+      "PackagePath": "staticwebassets\\css\\normalize.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\showBooks.css",
+      "PackagePath": "staticwebassets\\css\\showBooks.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\style.css",
+      "PackagePath": "staticwebassets\\css\\style.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\styleedite.css",
+      "PackagePath": "staticwebassets\\css\\styleedite.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\css\\userProfile.css",
+      "PackagePath": "staticwebassets\\css\\userProfile.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\html\\Index.html",
+      "PackagePath": "staticwebassets\\html\\Index.html"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\3.jpg",
+      "PackagePath": "staticwebassets\\images\\3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\IMG_0325.jpg",
+      "PackagePath": "staticwebassets\\images\\IMG_0325.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\Landing_BG.jpg",
+      "PackagePath": "staticwebassets\\images\\Landing_BG.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\Sell.jpg",
+      "PackagePath": "staticwebassets\\images\\Sell.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\avatar-01.png",
+      "PackagePath": "staticwebassets\\images\\avatar-01.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\avatar-02.png",
+      "PackagePath": "staticwebassets\\images\\avatar-02.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\avatar-03.png",
+      "PackagePath": "staticwebassets\\images\\avatar-03.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\avatar-04.png",
+      "PackagePath": "staticwebassets\\images\\avatar-04.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\avatar-05.png",
+      "PackagePath": "staticwebassets\\images\\avatar-05.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\avatar-06.png",
+      "PackagePath": "staticwebassets\\images\\avatar-06.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\buy-img.png",
+      "PackagePath": "staticwebassets\\images\\buy-img.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\img-1.jpg",
+      "PackagePath": "staticwebassets\\images\\img-1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\img-2.jpg",
+      "PackagePath": "staticwebassets\\images\\img-2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\img-3.jpg",
+      "PackagePath": "staticwebassets\\images\\img-3.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\img-4.jpg",
+      "PackagePath": "staticwebassets\\images\\img-4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\logo.png",
+      "PackagePath": "staticwebassets\\images\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\signIn.jpg",
+      "PackagePath": "staticwebassets\\images\\signIn.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\images\\كتاب-سلاح-التلميذ-دراسات-إجتماعية-5-إبتدائي-2022.jpg",
+      "PackagePath": "staticwebassets\\images\\كتاب-سلاح-التلميذ-دراسات-إجتماعية-5-إبتدائي-2022.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\js\\addBook.js",
+      "PackagePath": "staticwebassets\\js\\addBook.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\js\\cart.js",
+      "PackagePath": "staticwebassets\\js\\cart.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\js\\home.js",
+      "PackagePath": "staticwebassets\\js\\home.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\js\\showBooks.js",
+      "PackagePath": "staticwebassets\\js\\showBooks.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\userimages\\defult.jpg",
+      "PackagePath": "staticwebassets\\userimages\\defult.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\userimages\\log6.PNG",
+      "PackagePath": "staticwebassets\\userimages\\log6.PNG"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-brands-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-brands-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-brands-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-brands-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-brands-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-brands-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-regular-400.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.eot"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-regular-400.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.svg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-regular-400.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-regular-400.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-regular-400.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-regular-400.woff2"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-solid-900.eot",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.eot"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-solid-900.svg",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.svg"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-solid-900.ttf",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.ttf"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-solid-900.woff",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff"
+    },
+    {
+      "Id": "C:\\Users\\hp\\source\\repos\\schoolbook\\schoolbook\\wwwroot\\webfonts\\fa-solid-900.woff2",
+      "PackagePath": "staticwebassets\\webfonts\\fa-solid-900.woff2"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.build.schoolbook.props",
+      "PackagePath": "build\\schoolbook.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.buildMultiTargeting.schoolbook.props",
+      "PackagePath": "buildMultiTargeting\\schoolbook.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.buildTransitive.schoolbook.props",
+      "PackagePath": "buildTransitive\\schoolbook.props"
+    },
+    {
+      "Id": "obj\\Release\\net6.0\\win-x86\\staticwebassets\\msbuild.schoolbook.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

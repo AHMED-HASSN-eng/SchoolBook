@@ -1,0 +1,294 @@
+﻿@{
+    Layout = null;
+     
+}
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>إضافة كتاب | School Book</title>
+    <!-- render all elements normale -->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <!-- font awsome -->
+    <link rel="stylesheet" href="/css/all.min.css">
+    <!-- main style -->
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/forms.css">
+    <!-- goole font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section id="add-book">
+        <div class="content">
+            <header>
+                <div class="container">
+                    <div id="header-links">
+                        <i class="fa-solid fa-bars" id="header-links"></i>
+                        <!-- this is horizontal list -->
+                        <ul class="header-outer-links">
+                            <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                            <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                            <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                            <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                            <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                        </ul>
+                        <!-- this is a vertical list -->
+                        <ul id="links-list" class="links-list hidden">
+                            <li><a href="/homepage/index" class="outer-link">الصفحة الرئيسية</a></li>
+                            <li><a href="/showbook/showall/1" class="outer-link">المرحلة الابتدائية</a></li>
+                            <li><a href="/showbook/showall/2" class="outer-link">المرحلة الاعدادية</a></li>
+                            <li><a href="/showbook/showall/3" class="outer-link">المرحلة الثانوية</a></li>
+                            <li><a href="/html/Index.html" class="outer-link">سياسة البيع و الاسترجاع</a></li>>
+                        </ul>
+                    </div>
+                    <div class="account-shop-logo">
+                        <div class="account-shop">
+                            @{
+                                if (ViewBag.logining==true)
+                                {
+                                    <div id="account">
+                                        <img src="/userimages/@ViewBag.user.Image" alt="">
+                                        <span>الحساب</span>
+                                        <ul id="account-links" class="hidden">
+                                            <li><a href="/userprofile/profile" class="inner-links">الصفحة الشخصية</a></li>
+                                            <li><a href="/EditeProfile/EditeProfile" class="inner-links">تعديل البيانات</a></li>
+                                            <li><a href="/addnewbook/addnewbook" class="inner-links">اضافة كتاب</a></li>
+                                            <li><a href="/homepage/logout" class="inner-links">تسجيل الخروج</a></li>
+                                        </ul>
+                                    </div>
+                                }
+                                else
+                                {
+                                    <div id="account">
+                                        <img src="/images/logo.png" alt="">
+                                        <span>الحساب</span>
+                                        <ul id="account-links" class="hidden">
+                                            
+                                            <li><a href="/signin/signin" class="inner-links">تسجيل الدخول</a></li>
+                                        </ul>
+                                    </div>
+                                }
+                            }
+                            <div id="shop">
+                                <i class="fa-solid fa-cart-shopping"></i>
+                               <!-- <span>سلة المشتريات</span>-->
+                                <a href="/cart/index" class="inner-links">سلة المشتريات</a>
+                            </div>
+                        </div>
+                        <div id="logo">
+                            <img src="/images/logo.png" alt="logo">
+                            <strong>School Book</strong>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container icon-container">
+                <i class="fa-regular fa-images"></i>
+            </div>
+        </div>
+        <div class="container form-content">
+            <div class="section-title">
+                إضافة كتاب
+            </div>
+            <form action="/Addnewbook/savebook"  method="post" name="data-modification" enctype="multipart/form-data">
+                <div id="name-subject">
+                    <div class="box">
+                        <label for="book-name">اسم الكتاب :</label>
+                        <select name="CompanyName" id="book-name" >
+                            <option value="">اختر اسم الكتاب</option>
+                            <option value="الامتحان">الامتحان</option>
+                            <option value="الاضواء">الاضواء</option>
+                            <option value="نيوتن">نيوتن</option>
+                            <option value="المعاصر">المعاصر</option>
+                            <option value="سلاح التلميذ">سلاح التلميذ</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <label for="book-publish-date">تاريخ نشر الكتاب :</label>
+                        <input name="PublishYear" type="date" >
+                    </div>
+                    <!-- <div class="box">
+                        <label for="subject">مادة :</label>
+                        <input type="text" id="last-name" name="last-name" placeholder="الاسم الاخير" >
+                        <label for="book-subject">المادة :</label>
+                        <select name="book-subject" id="book-subject" >
+                            <option value="">اختر مادة الكتاب</option>
+                            <option value="القاهرة">الامتحان</option>
+                            <option value="الإسكندرية">الاضواء</option>
+                            <option value="بورسعيد">نيوتن</option>
+                            <option value="الدقهلية">المعاصر</option>
+                            <option value="الشرقية">سلاح التلميذ</option>
+                        </select>
+                    </div> -->
+                </div>
+                <hr>
+                <div class="title"> اختر المرحلة الدراسية و السنة الدراسية</div>
+                <div id="stage-level">
+                    <div class="box">
+                        <label>اختر المرحلة الدراسية :</label>
+                        <div class="stage">
+                            <div class="primary-stage">
+                                <input type="radio" name="stage" value="الابتدائى" id="primary-stage">
+                                <label for="primary-stage">المرحلة الابتدائية </label>
+                            </div>
+                            <div class="middle-stage">
+                                <input type="radio" name="stage" value="الاعدادى" id="middle-stage">
+                                <label for="middle-stage">المرحلة الاعدادي </label>
+                            </div>
+                            <div class="high-stage">
+                                <input type="radio" name="stage" value="الثانوى" id="high-stage">
+                                <label for="high-stage">المرحلة الثانوية </label>
+                                <ul class="hidden" id="department">
+                                    <li class="first-high-stage">
+                                        <input type="radio" name="department" value="first-high-stage" id="first-high-stage">
+                                        <label for="first-high-stage">عام</label>
+                                    </li>
+                                    <li class="scientific-department">
+                                        <input type="radio" name="department" value="scientific-department" id="scientific-department">
+                                        <label for="scientific-department">القسم العلمي</label>
+                                    </li>
+                                    <li class="literary-department">
+                                        <input type="radio" name="department" value="literary-department" id="literary-department">
+                                        <label for="literary-department">القسم الادبي</label>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <label>السنة الدراسية :</label>
+                        <select name="vmstudyear" id="primary-level">
+                            <option value="">اختر السنة الدراسية</option>
+                            <option value="الاول">الاولي</option>
+                            <option value="الثاني">الثانية</option>
+                            <option value="الثالث">الثالثة</option>
+                            <option value="الرابع">الرابعة</option>
+                            <option value="الخامس">الخامسة</option>
+                            <option value="السادس">السادسة</option>
+                        </select>
+                        <select name="vmstudyear" id="mid-high-level" class="hidden">
+                            <option value="">اختر السنة الدراسية</option>
+                            <option value="الاول">الاولي</option>
+                            <option value="الثاني">الثانية</option>
+                            <option value="الثالث">الثالثة</option>
+                        </select>
+                    </div>
+                </div>
+                <hr>
+                <div class="title">اختر الترم و المادة</div>
+                <div id="semester-subject">
+                    <div class="box">
+                        <label>الترم الدراسي :</label>
+                        <select name="Semseter" id="semester" >
+                            <option value="">اختر الترم الدراسي </option>
+                            <option value="1">الترم الاول</option>
+                            <option value="2">الترم الثاني</option>
+                        </select>
+                    </div>
+                    <div class="box">
+                        <label>المادة :</label>
+                        <select name="Subject" id="primary-middle-subject">
+                            <option value="اللغة العربية">اللغة العربية</option>
+                            <option value="الرياضيات">الرياضيات</option>
+                            <option value="العلوم">العلوم</option>
+                            <option value="الدراسات الاجتماعية">الدراسات الاجتماعية</option>
+                            <option value="اللغة الإنجليزية">اللغة الإنجليزية</option>
+                        </select>
+                        <select name="Subject" id="first-grade-subjects" class="hidden">
+                            <option value="">اختر مادة</option>
+                            <option value="اللغة العربية">اللغة العربية</option>
+                            <option value="اللغة الإنجليزية">اللغة الإنجليزية</option>
+                            <option value="الرياضيات">الرياضيات</option>
+                            <option value="التاريخ">التاريخ</option>
+                            <option value="الجغرافيا">الجغرافيا</option>
+                            <option value="الفيزياء">الفيزياء</option>
+                            <option value="الكيمياء">الكيمياء</option>
+                            <option value="الأحياء">الأحياء</option>
+                            <option value="علم الاجتماع">علم الاجتماع</option>
+                            <option value="الفلسفة">الفلسفة</option>
+                            <option value="علم النفس">علم النفس</option>
+                        </select>
+                        <select name="Subject" id="science-stream-subjects" class="hidden">
+                            <option value="">اختر مادة</option>
+                            <option value="اللغة العربية">اللغة العربية</option>
+                            <option value="اللغة الإنجليزية">اللغة الإنجليزية</option>
+                            <option value="الرياضيات">الرياضيات</option>
+                            <option value="الفيزياء">الفيزياء</option>
+                            <option value="الكيمياء">الكيمياء</option>
+                            <option value="الأحياء">الأحياء</option>
+                            <option value="الجيولوجيا">الجيولوجيا</option>
+                            <option value="الإحصاء">الإحصاء</option>
+                            <option value="التفاضل والتكامل">التفاضل والتكامل</option>
+                        </select>
+                        <select name ="Subject" id="arts-stream-subjects" class="hidden">
+                            <option value="">اختر مادة</option>
+                            <option value="اللغة العربية">اللغة العربية</option>
+                            <option value="اللغة الإنجليزية">اللغة الإنجليزية</option>
+                            <option value="التاريخ">التاريخ</option>
+                            <option value="الجغرافيا">الجغرافيا</option>
+                            <option value="علم الاجتماع">علم الاجتماع</option>
+                            <option value="الفلسفة">الفلسفة</option>
+                            <option value="علم النفس">علم النفس</option>
+                            <option value="الاقتصاد">الاقتصاد</option>
+                        </select>
+                    </div>
+                </div>
+               
+                <hr>
+                  <div class="title">سعر الكتاب</div>
+                  <div id="name-subject">
+                    <div class="box">
+                      <label for="book-price">سعر الكتاب :</label>
+                        <input name="price" type="number" />
+                    </div>
+              @*      <div class="box">
+                      <label for="book-quality">جودة الكتاب :</label>
+                      <input
+                        type="number"
+                        min="1"
+                        max="5"
+                        name="qulaity"
+                        required
+                      />
+                    </div>*@
+                  </div>
+            
+                <hr>
+                <div class="title">وصف الكتاب</div>
+                <textarea name="Description" id="" placeholder="قم بوضع وصف مناسب للكتاب هنا ..." ></textarea>
+                <hr>
+                <div class="title">قم برفع صور الكتاب هنا </div>
+               @* <table>
+                    <thead>
+                        <tr>
+                            <td colspan="5">قم برفع هذه الصفحات من الكتاب</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>5</td>
+                            <td>20</td>
+                            <td>33</td>
+                            <td>45</td>
+                        </tr>
+                    </tbody>
+                </table>*@
+                <div class="upload-container">
+                    <input name ="files" type="file" id="image-upload" accept="image/*" multiple >
+                    <label for="image-upload">اضغط هنا لرفع الصور</label>
+                   
+                </div>
+                <div class="image-preview-container">
+                </div>
+                <input type="submit" value="إرسال" style="display: block; margin: auto;">
+            </form>
+        </div>
+    </section>
+    <script src="/js/home.js"></script>
+    <script src="/js/addBook.js"></script>
+</body>
+</html>
